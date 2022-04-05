@@ -20,7 +20,7 @@
     // js 코딩 장소
     export default {
         emits: ['add-todo'],
-        setup(props, context) {
+        setup(props, {emit}) {
             // 추가할 할일
             const todo = ref('');
             // 내용 입력 안내창 여부
@@ -35,7 +35,7 @@
                     // // 할일의 내용을 배열로 추가힌다.
                     // 이때 상위 컴포넌트로 전달한다.
                     // context.emit('event', {data});
-                    context.emit('add-todo', {
+                    emit('add-todo', {
                         id: Date.now(),
                         subject: todo.value,
                         complete: false
