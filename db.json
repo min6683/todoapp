@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "subject": "코딩하기",
+      "complete": false,
+      "id": 1
+    },
+    {
+      "subject": "프로필 만들기",
+      "complete": false,
+      "id": 2
+    },
+    {
+      "subject": "사진 찍기",
+      "complete": false,
+      "id": 3
+    }
+  ]
+}
