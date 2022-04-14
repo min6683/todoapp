@@ -1,54 +1,22 @@
 {
   "todos": [
     {
-      "subject": "코딩",
+      "subject": "코딩연습",
       "complete": false,
+      "body": "꾸준히 코딩하기\n",
       "id": 1
+    },
+    {
+      "subject": "자격증 준비",
+      "complete": false,
+      "body": "자격증 준비하기",
+      "id": 2
     },
     {
       "subject": "블로그",
       "complete": false,
-      "id": 2
-    },
-    {
-      "subject": "123123123",
-      "complete": true,
+      "body": "블로그 업데이트",
       "id": 3
-    },
-    {
-      "subject": "청소",
-      "complete": true,
-      "id": 4
-    },
-    {
-      "subject": "돈벌기..",
-      "complete": false,
-      "id": 5
-    },
-    {
-      "subject": "1",
-      "complete": false,
-      "id": 6
-    },
-    {
-      "subject": "2",
-      "complete": true,
-      "id": 7
-    },
-    {
-      "subject": "3",
-      "complete": true,
-      "id": 8
-    },
-    {
-      "subject": "4",
-      "complete": true,
-      "id": 9
-    },
-    {
-      "subject": "가보자",
-      "complete": true,
-      "id": 10
     }
   ]
 }
