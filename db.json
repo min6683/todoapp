@@ -22,7 +22,7 @@
     },
     {
       "subject": "돈벌기..",
-      "complete": true,
+      "complete": false,
       "id": 5
     },
     {
@@ -49,11 +49,6 @@
       "subject": "가보자",
       "complete": true,
       "id": 10
-    },
-    {
-      "subject": "가봅시다111111",
-      "complete": true,
-      "id": 11
     }
   ]
 }

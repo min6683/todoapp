@@ -1,19 +1,34 @@
 <template>
 
     <div class="card mt-2" v-for="(todo, index) in todos" v-bind:key="todo.id">
-
-        <div class="card-body p-2 d-flex" @click="moveToPage(todo.id)">
+        
+        <div 
+            class="card-body p-2 d-flex"
+            @click="moveToPage(todo.id)"
+        >
 
             <div class="form-check flex-grow-1">
-                <input type="checkbox" class="form-check-input" :checked="todo.complete" :id="todo.id"
-                    @change="toggleTodo(index, $event)" @click.stop>
-                <label class="form-check-label" v-bind:class="{ todocss : todo.complete }" v-bind:for="todo.id">
+                <input 
+                    type="checkbox" 
+                    class="form-check-input" 
+                    :checked="todo.complete" 
+                    :id="todo.id" 
+                    @change="toggleTodo(index, $event)"
+                    @click.stop
+                >
+                <label 
+                    class="form-check-label" 
+                    :class="{ todocss : todo.complete }" 
+                    :for="todo.id">
                     {{ todo.subject }}
                 </label>
             </div>
             <!-- 삭제버튼 -->
             <div>
-                <button class="btn btn-danger btn-sm" @click.stop="deleteTodo(index)">
+                <button 
+                    class="btn btn-danger btn-sm" 
+                    @click.stop="deleteTodo(index)"
+                >
                     Delete
                 </button>
             </div>
@@ -23,10 +38,7 @@
     </div>
 </template>
 <script>
-    import {
-        useRouter
-    } from 'vue-router'
-
+    import { useRouter} from 'vue-router' 
     export default {
         // props: ['todos']
         props: {
@@ -34,16 +46,10 @@
                 type: Array,
                 required: true
             }
-        },
-
+        }, 
         emits: ['toggle-todo', 'delete-todo'],
-
-        setup(props, {
-            emit
-        }) {
-
+        setup(props, {emit}){
             const router = useRouter();
-
             const toggleTodo = (index, event) => {
                 // console.log(index);
                 emit('toggle-todo', index, event.target.checked);
@@ -51,7 +57,6 @@
             const deleteTodo = (index) => {
                 emit('delete-todo', index);
             };
-
             // 클릭된 id 를 전달한다.
             const moveToPage = (todoId) => {
                 // console.log(todoId);
@@ -64,7 +69,6 @@
                     }
                 });
             }
-
             return {
                 toggleTodo,
                 deleteTodo,
@@ -74,5 +78,4 @@
     }
 </script>
 <style>
-
 </style>
