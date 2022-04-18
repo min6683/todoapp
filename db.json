@@ -1,12 +1,6 @@
 {
   "todos": [
     {
-      "subject": "코딩연습",
-      "complete": false,
-      "body": "꾸준히 코딩하기\n",
-      "id": 1
-    },
-    {
       "subject": "자격증 준비",
       "complete": false,
       "body": "자격증 준비하기",
