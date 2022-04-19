@@ -1,18 +1,18 @@
 <template>    
-    <h1>할일 내용수정</h1>
-    <TodoForm :editing="true"/>
+    <h1>할일 내용 수정</h1>
+    <TodoForm :editing="true" />
 </template>
 
 <script>
+// import { getCurrentInstance } from 'vue'
 import TodoForm from '@/components/TodoForm.vue'
-
-export default {
+export default{
     components: {
         TodoForm
-    }, 
-    setup() {      
-      return {
-      }
+    },
+    setup() {
+        return {
+        }
     }
 }
 </script>

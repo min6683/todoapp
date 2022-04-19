@@ -18,7 +18,6 @@
 
 <script>
     import { getCurrentInstance } from 'vue';
-
     export default {
         props: {
             label: {
@@ -35,9 +34,8 @@
             }
         },
         emits: ['update-subject'],
-        setup() {    
-            const { emit } = getCurrentInstance();
-                    
+        setup() {
+            const {emit} = getCurrentInstance();
             const onInput = (event) => {
                 emit('update:subject', event.target.value);
             }

@@ -18,17 +18,15 @@
 </template>
 
 <script>
-import ModalWin from '@/components/ModalWin.vue'
 import { getCurrentInstance } from 'vue'
-
+import ModalWin from '@/components/ModalWin.vue'
 export default {
     components: {
         ModalWin
     },
     emits: ['close', 'delete'],
         setup() {
-             const { emit } = getCurrentInstance();
-            
+            const {emit} = getCurrentInstance();
             const onClose = () => {
                 emit('close')
             };

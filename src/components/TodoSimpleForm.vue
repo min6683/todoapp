@@ -20,17 +20,14 @@
 
 </template>
 <script>
+    import { getCurrentInstance } from 'vue'
     import {ref} from 'vue'
-    import {getCurrentInstance} from 'vue'
-    
     // js 코딩 장소
     export default {
         emits: ['add-todo'],
 
         setup() {
-
-            const { emit } = getCurrentInstance();
-            
+            const {emit} = getCurrentInstance();
             // 추가할 할일
             const todo = ref('');
             // 내용 입력 안내창 여부
@@ -53,6 +50,8 @@
                         subject: todo.value,
                         complete: false
                     });
+
+
                 }
                 todo.value = '';
             };

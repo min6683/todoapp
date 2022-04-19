@@ -31,15 +31,14 @@
 </template>
 
 <script>
-    import { getCurrentInstance} from 'vue'
-    
+
+    import { getCurrentInstance } from 'vue'
     export default {
 
         emits: ['close-win'],
         
         setup() {
-             const { emit } = getCurrentInstance();
-            
+            const {emit} = getCurrentInstance();
             const onClose = () => {
                 emit('close-win');
             };

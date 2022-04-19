@@ -1,10 +1,9 @@
 <template>
-    <h1>{{ apptitle }}</h1>    
+    <h1>{{apptitle}}</h1>
 </template>
-
 <script>
-export default {
-    // props: ['apptitle']
+export default{
+    // props: ['apptitle'],
     props: {
         apptitle: {
             type: String,
@@ -13,6 +12,7 @@ export default {
     }
 }
 </script>
-
 <style>
+
+
 </style>
